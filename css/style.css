@@ -61,7 +61,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1230px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Header */
