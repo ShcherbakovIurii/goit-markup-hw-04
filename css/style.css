@@ -109,6 +109,10 @@ img {
   color: var(--accent-color);
 }
 
+.link:hover svg{
+  fill: var(--accent-color);
+}
+
 .site-nav {
   display: flex;
 }
@@ -479,26 +483,24 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--primary-white-color);
 }
 
 .social-link:hover,
-.social-link:focus {
+.social-link:focus{
+
   background-color: var(--accent-color);
 }
+
+.social-link:hover svg{
+fill: var(--primary-white-color);
+}
+
 .social-link-icon {
   fill: var(--primary-icon-color);
 }
 
-.social-link-icon:hover,
-.social-link-icon:focus {
-  fill: currentColor;
-}
-
 /* Постійні клієнти */
 
-/* .client-section {
-} */
 
 .client-list {
   display: flex;
