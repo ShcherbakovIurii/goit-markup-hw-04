@@ -103,14 +103,8 @@ img {
 .logo-link:hover,
 .logo-link:focus,
 .logo-header:hover,
-.logo-header:focus,
-.link:hover,
-.link:focus {
+.logo-header:focus {
   color: var(--accent-color);
-}
-
-.link:hover svg{
-  fill: var(--accent-color);
 }
 
 .site-nav {
@@ -135,6 +129,9 @@ img {
   list-style: none;
 }
 .link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -146,7 +143,14 @@ img {
   letter-spacing: 0.02em;
   margin-right: 50px;
 }
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
 
+.link:hover svg {
+  fill: var(--accent-color);
+}
 .aside-header {
   display: flex;
   align-items: center;
@@ -163,20 +167,6 @@ img {
 .item-header {
   display: flex;
   align-items: center;
-}
-
-.icon-envelope {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.icon-smartphone {
-  margin-right: 10px;
-}
-
-.icon-envelope:hover,
-.icon-smartphone:hover {
-  fill: var(--accent-color);
 }
 
 /* Герой */
@@ -259,7 +249,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.hiden-section {
+.hidden-section {
   padding-bottom: 0;
 }
 
@@ -296,30 +286,15 @@ img {
   gap: 30px;
 }
 
-.list-item::before {
-  display: block;
-  content: "";
+.hidden-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 100px;
   height: 120px;
   margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--secondary-white-color);
   border-radius: 4px;
-}
-.icon-antenna::before {
-  background-image: url(../img/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../img/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../img/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../img/astronaut.svg);
 }
 
 .title {
@@ -486,13 +461,12 @@ img {
 }
 
 .social-link:hover,
-.social-link:focus{
-
+.social-link:focus {
   background-color: var(--accent-color);
 }
 
-.social-link:hover svg{
-fill: var(--primary-white-color);
+.social-link:hover svg {
+  fill: var(--primary-white-color);
 }
 
 .social-link-icon {
@@ -500,7 +474,6 @@ fill: var(--primary-white-color);
 }
 
 /* Постійні клієнти */
-
 
 .client-list {
   display: flex;
